@@ -12,17 +12,17 @@ def main():
     
     st.markdown(html_temp,unsafe_allow_html=True)
     
-    model = joblib.load('house_joblib')
+    model = st.number_input('house_joblib')
     
-    p1 = st.slider('Avg. Area Income',17000,200000)
+    p1 = st.number_input('Avg. Area Income',17000,200000)
     
-    p2 = st.slider("Avg. Area House Age",2,30)
+    p2 = st.number_input("Avg. Area House Age",2,30)
         
-    p3 = st.slider("Avg. Area Number Of Rooms",2,20)
+    p3 = st.number_input("Avg. Area Number Of Rooms",2,20)
     
     
     
-    p4 = st.slider("Enter number of bedrooms",2,8)
+    p4 = st.number_input("Enter number of bedrooms",2,8)
     
     
     p5 = st.number_input("Enter area population")
