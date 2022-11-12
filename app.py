@@ -31,7 +31,7 @@ def main():
     if st.button('Predict'):
         pred= model.predict([[p1,p2,p3,p4,p5]])
         
-        st.balloons()
+        st.snow()
         st.success('Your House Rent per year is {}'.format(round(pred[0],2)))
         
     
